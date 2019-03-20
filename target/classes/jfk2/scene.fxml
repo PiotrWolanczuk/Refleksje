@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfk2.MainController">
+   <children>
+      <Button id="openJar" layoutX="172.0" layoutY="392.0" mnemonicParsing="false" onAction="#openJar" text="Open jar" />
+      <TextField id="jarPath" fx:id="jarPath" layoutX="14.0" layoutY="392.0" />
+      <TextArea id="writeText" fx:id="writeText" layoutX="246.0" layoutY="4.0" prefHeight="424.0" prefWidth="395.0" />
+      <Button id="close" fx:id="close" layoutX="85.0" layoutY="417.0" mnemonicParsing="false" onAction="#close" text="Close" />
+      <Button layoutX="4.0" layoutY="14.0" mnemonicParsing="false" onAction="#create" text="Create" />
+      <Button layoutX="8.0" layoutY="59.0" mnemonicParsing="false" onAction="#read" text="Read" />
+      <Button layoutX="2.0" layoutY="102.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <Button layoutX="4.0" layoutY="141.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <ChoiceBox fx:id="createChoice" layoutX="67.0" layoutY="14.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="readChoice" layoutX="67.0" layoutY="59.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="updateChoice" layoutX="67.0" layoutY="102.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="deleteChoice" layoutX="67.0" layoutY="141.0" prefWidth="150.0" />
+      <TextField fx:id="pacClasName" layoutX="8.0" layoutY="226.0" />
+      <Label layoutX="8.0" layoutY="192.0" text="Class/Package name" />
+      <Label layoutX="10.0" layoutY="258.0" text="Method/Field name" />
+      <TextField fx:id="methodName" layoutX="8.0" layoutY="286.0" />
+      <Button fx:id="clear" layoutX="177.0" layoutY="188.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+      <Label fx:id="text" layoutX="172.0" layoutY="258.0" />
+      <TextField fx:id="classPath" layoutX="14.0" layoutY="344.0" />
+      <Label layoutX="16.0" layoutY="321.0" text="Class new path" />
+      <TextArea fx:id="errorText" layoutX="246.0" layoutY="433.0" prefHeight="59.0" prefWidth="395.0" />
+      <Label layoutX="206.0" layoutY="454.0" text="Errors:" />
+      <TextArea fx:id="hierarchy" layoutX="641.0" layoutY="26.0" prefHeight="476.0" prefWidth="200.0" />
+      <Label layoutX="713.0" layoutY="6.0" text="Hierarchy tree" />
+         </children>
+</AnchorPane>
